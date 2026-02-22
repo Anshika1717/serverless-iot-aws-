@@ -2,12 +2,22 @@
 <html>
 <head>
     <title>IoT Dashboard</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <h1>IoT Sensor Dashboard</h1>
-    
-    <div id="data"></div>
-    
+
+    <div class="container">
+        <div class="card">
+            <div><span class="label">Temperature:</span> <span id="temperature" class="value">--</span></div>
+            <div><span class="label">Humidity:</span> <span id="humidity" class="value">--</span></div>
+            <div><span class="label">Light:</span> <span id="light" class="value">--</span></div>
+            <div><span class="label">Air Quality:</span> <span id="air_quality" class="value">--</span></div>
+            <div class="timestamp" id="timestamp"></div>
+        </div>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
